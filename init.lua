@@ -22,10 +22,9 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.shiftround = true
 vim.opt.shiftwidth = 2
+vim.wo.number = true
+vim.diagnostic.config({ virtual_text = true})
 
-
-
-
-local opts = {}
+-- comment
 
 require("lazy").setup("plugins")
