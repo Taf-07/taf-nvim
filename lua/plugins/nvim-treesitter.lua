@@ -6,6 +6,6 @@ return {
     install_dir = vim.fn.stdpath('data') .. '/site',
   },
   config = function()
-    require('nvim-treesitter').install { 'lua', 'rust', 'javascript', 'zig' }
+    require('nvim-treesitter').install { 'lua', 'rust', 'javascript', 'zig', }
   end
 }

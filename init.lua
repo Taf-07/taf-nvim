@@ -1,7 +1,3 @@
-vim.opt.expandtab = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   local lazyrepo = "https://github.com/folke/lazy.nvim.git"
@@ -20,7 +16,15 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = " "
+
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftround = true
+vim.opt.shiftwidth = 2
+
+
+
 
 local opts = {}
 
